@@ -1,0 +1,29 @@
+
+.Input{ 
+    background-color: #8087CB;
+    border: 0;
+    color:#ffffff
+}
+
+.Input::placeholder{    
+    color: #ffffff;
+}
+
+.Upload-box{
+    text-align: center;
+}
+
+.TituloLogIn {
+    margin-top: 100px;
+    color: #61dafb;
+    text-align: center;
+}
+
+.FormLogIn{   
+    align-self: center;
+}
+
+.Redir-msg{
+    color: #FB6C93;
+    text-decoration: none;
+}
