@@ -17,7 +17,7 @@ function Home() {
       <header className="header">
       <div>
         <img draggable="false" src={logo} />
-        <h2>Lorem ipsum</h2>
+        <h2>Descripción</h2>
         <RegisterOptions />
       </div>
       <div>
@@ -31,9 +31,10 @@ function Home() {
       </ul>
       </div>
       </header>
-      <div>
-        hola
-      <ImageSlider slides={SliderData}></ImageSlider>
+      <div className="trending">
+      <div><h1>Trending animes</h1>
+      <ImageSlider slides={SliderData}></ImageSlider></div>
+      <div></div>
       </div>
     </div>
   );
