@@ -1,8 +1,63 @@
-.Bottom{
-    background-color: rgb(55, 62, 78);
-    height: 250px;
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+.footer{
+    background-color: #44477E;
     width: 100%;
-    border-top: 2px;
-    border-top-color: #FB6C93;
-    border-top-style: solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+
+
+.footer img{
+    width: 200px;
+}
+
+
+.footer p{
+    color: #fff;
+    text-align: right;
+}
+
+.trending{
+    margin-bottom: 50px;
+}
+
+.trending > div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 70%;
+}
+
+.trending > div:last-child img{
+    width: 400px !important;
+    height: 250px !important;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 0.15s ease-in;
+    position: relative;
+    clip-path: inset(0px 20px 0px 20px) !important;
+    margin-left:-20px !important;
+}
+
+.trending > div:last-child img:hover{
+    box-shadow: 0px 0px 20px #15174b;
+    width: 400px !important;
+    height: 250px !important;
+    transform: scale(1.2,1.2) !important;
+    position: relative;
+    z-index: 2;
+    clip-path: inset(-100px -100px -100px -100px) !important;
+}
+
+.trending a{
+    text-decoration: none;
+    color: #FB6C93;
+    font-family: 'Acme', sans-serif
 }

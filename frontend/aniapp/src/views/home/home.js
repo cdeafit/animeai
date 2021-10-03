@@ -5,6 +5,12 @@ import anime3 from '../../img/anime3.jpg';
 import anime4 from '../../img/anime4.jpg';
 import anime5 from '../../img/anime5.jpg';
 import anime6 from '../../img/anime6.jpg';
+import g1 from '../../img/g1.jpg';
+import g2 from '../../img/g2.jpg';
+import g3 from '../../img/g3.jpg';
+import g4 from '../../img/g4.jpg';
+import g5 from '../../img/g5.jpg';
+import g6 from '../../img/g6.jpg';
 import logo from '../../img/logo.png';
 
 import RegisterOptions from '../../components/RegisterOptions/RegisterOptions.js';
@@ -66,7 +72,7 @@ function UnLogged(){
       <header className="header">
       <div>
         <img draggable="false" src={logo} />
-        <h2>Descripción</h2> 
+        <h2>Some times it's hard to choose the perfect Anime.<br /> Anime<b>AI</b> it's here to help you</h2> 
         <RegisterOptions />
       </div>
       <div>
@@ -81,9 +87,15 @@ function UnLogged(){
       </div>
       </header>
       <div className="trending">
-      <div><h1>Trending animes</h1>
-      <ImageSlider slides={SliderData}></ImageSlider></div>
-      <div></div>
+      <div><h1>Trending animes</h1></div>
+      <div>
+        <a href="#"><img title="Kakegurui" src={g1} /></a>
+        <a href="#"><img title="No Game No Life" src={g2} /></a>
+        <a href="#"><img title="Naruto" src={g3} /></a>
+        <a href="#"><img title="One Piece" src={g4} /></a>
+        <a href="#"><img title="The Promised Neverland" src={g5} /></a>
+        <a href="#"><img title="Jujutsu Kaisen" src={g6} /></a>
+      </div>
       </div>
     </>
   );

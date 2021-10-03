@@ -16,11 +16,13 @@ body{
 .main .header h2{
     color: white;
     font-family: 'Courgette', cursive;
+    text-align: center;
 }
 
 .main h1{
     color: white;
     font-family: 'Courgette', cursive;
+    padding: 15px;
 }
 
 .main .header > div:nth-child(1){
@@ -32,6 +34,7 @@ body{
     width: 100%;
     min-height: 500px;
     z-index: 2;
+    box-shadow: 0px 5px 10px #24266c9a;
     position: absolute;
 }
 
@@ -48,7 +51,7 @@ body{
     display: flex;
     width: 600%;
     max-height: 500px;
-    animation: cambio 20s infinite ease-in;
+    animation: cambio 6s steps(1) infinite;
 }
 
 .main .header > div:nth-child(2) > ul > li{
@@ -107,3 +110,40 @@ body{
     box-shadow: 0px 13px 10px #24276C;
 }
 
+.main b{
+    color: #FB6C93;
+}
+
+.trending{
+    margin-bottom: 50px;
+}
+
+.trending > div:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 70%;
+}
+
+.trending > div:last-child img{
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 0.15s ease-in;
+    position: relative;
+    clip-path: inset(0px 40px 0px 40px);
+    margin-left:-74px ;
+}
+
+.trending > div:last-child img:hover{
+    box-shadow: 0px 0px 20px #15174b;
+    width: 350px;
+    height: 200px;
+    transform: scale(1.1,1.1);
+    position: relative;
+    z-index: 2;
+    clip-path: inset(-40px -40px -40px -40px);
+}

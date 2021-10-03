@@ -23,11 +23,10 @@ function App() {
         </Switch>
       </AuthProvider>
     </Router>
-    <bottom>
-    <div className="Bottom">      
-        <img draggable="false" src={logo}/>      
+    <div className="footer">      
+        <a href="#"><img draggable="false" src={logo}/></a>
+        <p>Lorem ipsum</p>
     </div>
-    </bottom>
     </>
   );
 }
