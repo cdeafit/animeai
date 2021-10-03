@@ -1,0 +1,8 @@
+.Bottom{
+    background-color: rgb(55, 62, 78);
+    height: 250px;
+    width: 100%;
+    border-top: 2px;
+    border-top-color: #FB6C93;
+    border-top-style: solid;
+}

@@ -1,25 +1,22 @@
-import React, {Fragment, useState, useRef} from 'react';
+import React, {Fragment, useState} from 'react';
 import { useAuth } from "../../../context/AuthContext";
 import './FormSign.css';
 import { Alert, AlertTitle } from '@material-ui/lab';
+import { useHistory } from "react-router-dom"
 
 const FormSign = () => {
-    const emailRef = useRef()
-    const passwordRef = useRef()
-    const passwordConfirmRef = useRef()
-    const { signup } = useAuth()
+    const { signup, login} = useAuth()
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
+    const history = useHistory()
 
     const [datos, setDatos] = useState({
-        username: '',
         email: '',
         password: '',
         passwordConfirmation: ''
     })
 
     const handleInputChange = (event) => {
-        //console.log(event.target.value)
         setDatos({
             ...datos,
             [event.target.name] : event.target.value
@@ -37,10 +34,11 @@ const FormSign = () => {
             setError('')
             setLoading(true)
             await signup(datos['email'], datos['password'])
-        } catch{
+            await history.push('/poll')
+        } catch {
             setError('Failed to create an account')
         }
-        setLoading(false)        
+        setLoading(false)
     }
 
     return(
@@ -50,16 +48,7 @@ const FormSign = () => {
             <form className='FormSignUp' onSubmit={sendData}>
                 <div>
                     <input
-                        type='text'
-                        class='Input'
-                        placeholder='Username'
-                        name='username'
-                        onChange={handleInputChange}
-                    ></input>
-                </div>
-                <div>
-                    <input
-                        type='text'
+                        type='email'
                         class='Input'
                         placeholder='Email'
                         name='email'

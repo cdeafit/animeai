@@ -1,13 +1,34 @@
-import logo from './logo.svg';
+import logo from './img/logo.png';
 import './App.css';
-import Home from './views/home/home.js'
-import {AuthProvider} from './context/AuthContext'
+
+import { AuthProvider } from './context/AuthContext'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
+import PrivateRoute from './components/PrivateRoute';
+
+import Home from './views/home/home'
+import Poll from './views/poll/poll'
+import ReccomendView from './views/reccomendView/reccomendView';
+import Settings from './views/settings/settings';
 
 function App() {
   return (
-    <AuthProvider>
-      <Home />
-    </AuthProvider>
+    <>
+    <Router>
+      <AuthProvider>
+        <Switch>
+          <Route exact path="/poll" component={Poll} />
+          <PrivateRoute path="/reccomendations" component={ReccomendView} />
+          <PrivateRoute exact path="/settings" component={Settings} />
+          <Route exact path="/" component={Home} />          
+        </Switch>
+      </AuthProvider>
+    </Router>
+    <bottom>
+    <div className="Bottom">      
+        <img draggable="false" src={logo}/>      
+    </div>
+    </bottom>
+    </>
   );
 }
 
