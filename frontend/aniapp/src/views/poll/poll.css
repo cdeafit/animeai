@@ -4,7 +4,7 @@ body{
 background-color: #24276C;
 }
 
-.gender{
+.genre{
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +12,8 @@ background-color: #24276C;
     align-items: center;
 }
 
-.gender div{
+.genre button{
+    width: max-content;
     margin: 10px;
     background-color: #44477E;
     text-decoration: none;
@@ -23,14 +24,20 @@ background-color: #24276C;
     font-family: 'Acme', sans-serif;
     transition: 0.1s ease-in;
     box-shadow: 0px 3px 10px #13154e;
+    display: inline-block!important;
 }
 
-.gender div:hover{
+.genre button:hover{
     background-color: #FB6C93;
     color: #24276C;
 }
 
-.gender>input[type="submit" i]{
+.genre button.selected{
+    background-color: #FB6C93;
+    color: #24276C;
+}
+
+.genre>input[type="submit" i]{
     background-color: #FB6C93;
     border: none;
     font-family: 'Acme', sans-serif;
@@ -43,7 +50,7 @@ background-color: #24276C;
     box-shadow: 0px 3px 10px #13154e;
 }
 
-.gender>input[type="submit" i]:hover{
+.genre>input[type="submit" i]:hover{
     background-color: #44477E;
     color: #ffffff;
 }

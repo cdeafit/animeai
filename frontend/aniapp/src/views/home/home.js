@@ -50,6 +50,10 @@ function Logged({currentUser}){
     history.push("/settings")
   }
 
+  const goReccomendations = () => {
+    history.push("/reccomendations")
+  }
+
   return(
     <>
     <h1>
@@ -61,12 +65,14 @@ function Logged({currentUser}){
     <button onClick={goSettings}>
       Settings
     </button>
+    <button onClick={goReccomendations}>
+      Reccomendations
+    </button>
     </>
   );
 }
 
 function UnLogged(){ 
-
   return(
     <>
       <header className="header">

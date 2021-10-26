@@ -1,0 +1,11 @@
+.card-viewer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-column-gap: 50px;
+    justify-content: center;
+}
+
+.card-content{
+    height: max-content;
+}

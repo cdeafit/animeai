@@ -23,6 +23,7 @@ function App() {
         </Switch>
       </AuthProvider>
     </Router>
+    
     <div className="footer">      
         <a href="#"><img draggable="false" src={logo}/></a>
         <p>Lorem ipsum</p>
