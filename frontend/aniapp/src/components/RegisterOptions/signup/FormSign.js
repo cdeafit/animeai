@@ -5,7 +5,7 @@ import { Alert, AlertTitle } from '@material-ui/lab';
 import { useHistory } from "react-router-dom"
 
 const FormSign = () => {
-    const { signup, login} = useAuth()
+    const { signup, login, updateProfile, currentUser } = useAuth()
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
     const history = useHistory()
@@ -13,14 +13,30 @@ const FormSign = () => {
     const [datos, setDatos] = useState({
         email: '',
         password: '',
-        passwordConfirmation: ''
+        passwordConfirmation: '',
+        defaultInfo:{
+            displayName: "",
+            photoURL: "/baki.jpg"
+        }
     })
 
     const handleInputChange = (event) => {
-        setDatos({
-            ...datos,
-            [event.target.name] : event.target.value
-        })
+        console.log( event.target.value.replace(/(@)+(.*)/,""));
+        if(event.target.name === 'email')
+            setDatos({
+                ...datos,
+                [event.target.name] : event.target.value,
+                defaultInfo: {
+                    ...datos.defaultInfo,
+                    displayName: event.target.value.replace(/(@)+(.*)/,"")
+                }
+            })
+        else
+            setDatos({
+                ...datos,
+                [event.target.name] : event.target.value
+            })
+            
     }
 
     async function sendData (event) {
@@ -30,14 +46,14 @@ const FormSign = () => {
            datos['passwordConfirmation']
         ){return setError('Passwords do not match')}
 
-        try{
+        //try{
             setError('')
             setLoading(true)
             await signup(datos['email'], datos['password'])
-            await history.push('/poll')
-        } catch {
+            history.push('/poll')
+        //} catch {
             setError('Failed to create an account')
-        }
+        //}
         setLoading(false)
     }
 

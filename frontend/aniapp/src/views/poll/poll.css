@@ -17,7 +17,7 @@ background-color: #24276C;
     margin: 10px;
     background-color: #44477E;
     text-decoration: none;
-    padding: 20px;
+    padding: 12px;
     border-radius: 10px;
     color: #FB6C93;
     font-size: 20px;
@@ -53,4 +53,8 @@ background-color: #24276C;
 .genre>input[type="submit" i]:hover{
     background-color: #44477E;
     color: #ffffff;
+}
+.msg-error{
+    text-align: center;
+    color: white;
 }

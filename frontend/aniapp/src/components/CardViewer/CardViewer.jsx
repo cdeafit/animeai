@@ -8,6 +8,7 @@ import recommended from './recommended.json';
 import "./card-viewer.css";
 import imagenDePrueba from "../../img/g1.jpg";
 
+
 export default function CardViewer(props) {
     const { recommendations, handleFinished } = props;
     const [selected, setSelected] = useState([]);
@@ -41,7 +42,7 @@ export default function CardViewer(props) {
                         image={imagenDePrueba}
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
+                        <Typography gutterBottom variant="h5" component="div" >
                         {anime}
                         </Typography>
                         <Typography variant="body2" color="text.secondary">

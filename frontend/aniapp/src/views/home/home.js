@@ -15,10 +15,9 @@ import logo from '../../img/logo.png';
 
 import RegisterOptions from '../../components/RegisterOptions/RegisterOptions.js';
 import ImageSlider from '../../components/ImageSlider/ImageSlider.js';
-import {SliderData} from '../../components/ImageSlider/SliderData.js';
+import Navbar from '../../components/Navbar/Navbar';
+import { SliderData } from '../../components/ImageSlider/SliderData.js';
 import { useAuth } from '../../context/AuthContext'
-import { useState } from 'react'
-import { useHistory } from 'react-router-dom'
 
 function Home() {
   const {currentUser} = useAuth()
@@ -31,47 +30,16 @@ function Home() {
 }
 
 function Logged({currentUser}){
-  const [error, setError] = useState("")
-  const { logout } = useAuth()
-  const history = useHistory()
-
-  async function handleLogout() {
-    setError("")
-
-    try {
-      await logout()
-      history.push("/")
-    } catch {
-      setError("Failed to log out")
-    }
-  }
-
-  const goSettings = () => {
-    history.push("/settings")
-  }
-
-  const goReccomendations = () => {
-    history.push("/reccomendations")
-  }
 
   return(
     <>
-    <h1>
-      You has logged in with {currentUser.email}
-    </h1>
-    <button type="button" onClick={handleLogout}>
-      Log out
-    </button>
-    <button onClick={goSettings}>
-      Settings
-    </button>
-    <button onClick={goReccomendations}>
-      Reccomendations
-    </button>
+      <Navbar />
+      <h1 style = { {textAlign: 'center', color: 'white'} }>Anime de la semana</h1>
+      <ImageSlider slides={SliderData} className = "slider-home"/>
     </>
   );
 }
-
+ 
 function UnLogged(){ 
   return(
     <>

@@ -32,7 +32,7 @@ body{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    min-height: 500px;
+    min-height: 515px;
     z-index: 2;
     box-shadow: 0px 5px 10px #24266c9a;
     position: absolute;
@@ -114,36 +114,6 @@ body{
     color: #FB6C93;
 }
 
-.trending{
-    margin-bottom: 50px;
-}
-
-.trending > div:last-child{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 70%;
-}
-
-.trending > div:last-child img{
-    width: 350px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: 0.15s ease-in;
-    position: relative;
-    clip-path: inset(0px 40px 0px 40px);
-    margin-left:-74px ;
-}
-
-.trending > div:last-child img:hover{
-    box-shadow: 0px 0px 20px #15174b;
-    width: 350px;
-    height: 200px;
-    transform: scale(1.1,1.1);
-    position: relative;
-    z-index: 2;
-    clip-path: inset(-40px -40px -40px -40px);
+.slider-home{
+    padding-top: 20px;
 }

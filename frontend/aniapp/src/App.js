@@ -7,8 +7,9 @@ import PrivateRoute from './components/PrivateRoute';
 
 import Home from './views/home/home'
 import Poll from './views/poll/poll'
-import ReccomendView from './views/reccomendView/reccomendView';
+import RecommendView from './views/recommendView/recommendView';
 import Settings from './views/settings/settings';
+import MyList from './views/myList/myList'
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
       <AuthProvider>
         <Switch>
           <Route exact path="/poll" component={Poll} />
-          <PrivateRoute path="/reccomendations" component={ReccomendView} />
+          <PrivateRoute path="/recommendations" component={RecommendView} />
           <PrivateRoute exact path="/settings" component={Settings} />
-          <Route exact path="/" component={Home} />          
+          <Route exact path="/" component={Home} />
+          <PrivateRoute exact path="/mylist" component={MyList}/>     
         </Switch>
       </AuthProvider>
     </Router>

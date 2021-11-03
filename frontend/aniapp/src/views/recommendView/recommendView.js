@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../../components/Navbar/Navbar'
 import '../../App.css';
 import g1 from '../../img/g1.jpg';
 import g2 from '../../img/g2.jpg';
@@ -7,7 +8,7 @@ import { animes, genres, anime_tagger } from "../../data/export.js"
 import { useState } from 'react'
 import { useHistory } from 'react-router-dom'
 
-function ReccomendView() {
+function RecommendView() {
   const [data, setData] = useState()
 
   const establishData = ({option}) => {
@@ -16,6 +17,7 @@ function ReccomendView() {
 
     return (
       <div className="main">
+        <Navbar />
        <div className="trending">
       <div><h1>Your results</h1></div>
       <div>
@@ -28,4 +30,4 @@ function ReccomendView() {
     );
   }
   
-export default ReccomendView;
+export default RecommendView;
