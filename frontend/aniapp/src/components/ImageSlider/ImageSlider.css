@@ -1,15 +1,14 @@
 .slider{
     position: relative;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 .image{
-    width: 1000px;
-    height: 600px;
-    border-radius: 10px;
+    width: 500px;
 }
 .right-arrow{
     position: absolute;

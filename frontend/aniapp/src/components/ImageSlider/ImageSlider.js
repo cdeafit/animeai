@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {SliderData} from './SliderData';
-import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
+//import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
+import { KeyboardArrowLeftRounded, KeyboardArrowRightRounded } from '@material-ui/icons';
 import "./ImageSlider.css";
 
 const ImageSlider = ({slides}) => {
@@ -21,8 +22,8 @@ const ImageSlider = ({slides}) => {
 
   return (
     <div className='slider'>
-      <FaArrowAltCircleLeft className='left-arrow' onClick={previousSlide} />
-      <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide}/>
+      <KeyboardArrowLeftRounded className='left-arrow' onClick={previousSlide} />
+      <KeyboardArrowRightRounded className='right-arrow' onClick={nextSlide}/>
       {SliderData.map((slide, index)=>{
 
         return(
@@ -32,8 +33,7 @@ const ImageSlider = ({slides}) => {
             )}            
           </div>    
         )
-      })}
-        
+      })}        
     </div>
   );
 }

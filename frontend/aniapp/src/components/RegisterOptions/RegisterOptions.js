@@ -18,7 +18,7 @@ export default function RegisterOptions() {
   };
   
   return (
-    <div>        
+    <div>
         <React.Fragment key={'logBox'}>
           <Button onClick={toggleDrawer('logBox', true)}>Log in</Button>
           <Drawer
@@ -26,8 +26,7 @@ export default function RegisterOptions() {
             open={state['logBox']}
             onClose={toggleDrawer('logBox', false)}
           >
-            <FormLog />
-            
+            <FormLog />            
             <h6 align="center">
                 Don't have an account yet? &nbsp;
                 <a

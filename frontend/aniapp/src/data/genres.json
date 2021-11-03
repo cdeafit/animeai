@@ -1,0 +1,232 @@
+[
+  {
+    "index": 0,
+    "tag_id": 1,
+    "tag_name": "Action"
+  },
+  {
+    "index": 1,
+    "tag_id": 2,
+    "tag_name": "Adventure"
+  },
+  {
+    "index": 2,
+    "tag_id": 3,
+    "tag_name": "Cars"
+  },
+  {
+    "index": 3,
+    "tag_id": 4,
+    "tag_name": "Comedy"
+  },
+  {
+    "index": 4,
+    "tag_id": 5,
+    "tag_name": "Dementia"
+  },
+  {
+    "index": 5,
+    "tag_id": 6,
+    "tag_name": "Demons"
+  },
+  {
+    "index": 6,
+    "tag_id": 7,
+    "tag_name": "Mystery"
+  },
+  {
+    "index": 7,
+    "tag_id": 8,
+    "tag_name": "Drama"
+  },
+  {
+    "index": 8,
+    "tag_id": 9,
+    "tag_name": "Ecchi"
+  },
+  {
+    "index": 9,
+    "tag_id": 10,
+    "tag_name": "Fantasy"
+  },
+  {
+    "index": 10,
+    "tag_id": 11,
+    "tag_name": "Game"
+  },
+  {
+    "index": 11,
+    "tag_id": 12,
+    "tag_name": "Grafos"
+  },
+  {
+    "index": 12,
+    "tag_id": 13,
+    "tag_name": "Historical"
+  },
+  {
+    "index": 13,
+    "tag_id": 14,
+    "tag_name": "Horror"
+  },
+  {
+    "index": 14,
+    "tag_id": 15,
+    "tag_name": "Kids"
+  },
+  {
+    "index": 15,
+    "tag_id": 16,
+    "tag_name": "Magic"
+  },
+  {
+    "index": 16,
+    "tag_id": 17,
+    "tag_name": "Martial_Arts"
+  },
+  {
+    "index": 17,
+    "tag_id": 18,
+    "tag_name": "Mecha"
+  },
+  {
+    "index": 18,
+    "tag_id": 19,
+    "tag_name": "Music"
+  },
+  {
+    "index": 19,
+    "tag_id": 20,
+    "tag_name": "Parody"
+  },
+  {
+    "index": 20,
+    "tag_id": 21,
+    "tag_name": "Samurai"
+  },
+  {
+    "index": 21,
+    "tag_id": 22,
+    "tag_name": "Romance"
+  },
+  {
+    "index": 22,
+    "tag_id": 23,
+    "tag_name": "School"
+  },
+  {
+    "index": 23,
+    "tag_id": 24,
+    "tag_name": "Sci-Fi"
+  },
+  {
+    "index": 24,
+    "tag_id": 25,
+    "tag_name": "Shoujo"
+  },
+  {
+    "index": 25,
+    "tag_id": 26,
+    "tag_name": "Shoujo_Ai"
+  },
+  {
+    "index": 26,
+    "tag_id": 27,
+    "tag_name": "Shounen"
+  },
+  {
+    "index": 27,
+    "tag_id": 28,
+    "tag_name": "Shounen_Ai"
+  },
+  {
+    "index": 28,
+    "tag_id": 29,
+    "tag_name": "Space"
+  },
+  {
+    "index": 29,
+    "tag_id": 30,
+    "tag_name": "Sports"
+  },
+  {
+    "index": 30,
+    "tag_id": 31,
+    "tag_name": "Super_Power"
+  },
+  {
+    "index": 31,
+    "tag_id": 32,
+    "tag_name": "Vampire"
+  },
+  {
+    "index": 32,
+    "tag_id": 33,
+    "tag_name": "Yaoi"
+  },
+  {
+    "index": 33,
+    "tag_id": 34,
+    "tag_name": "Yuri"
+  },
+  {
+    "index": 34,
+    "tag_id": 35,
+    "tag_name": "Harem"
+  },
+  {
+    "index": 35,
+    "tag_id": 36,
+    "tag_name": "Slice_of_Life"
+  },
+  {
+    "index": 36,
+    "tag_id": 37,
+    "tag_name": "Supernatural"
+  },
+  {
+    "index": 37,
+    "tag_id": 38,
+    "tag_name": "Military"
+  },
+  {
+    "index": 38,
+    "tag_id": 39,
+    "tag_name": "Police"
+  },
+  {
+    "index": 39,
+    "tag_id": 40,
+    "tag_name": "Psychological"
+  },
+  {
+    "index": 40,
+    "tag_id": 41,
+    "tag_name": "Thriller"
+  },
+  {
+    "index": 41,
+    "tag_id": 42,
+    "tag_name": "Seinen"
+  },
+  {
+    "index": 42,
+    "tag_id": 43,
+    "tag_name": "Josei"
+  },
+  {
+    "index": 43,
+    "tag_id": 46,
+    "tag_name": "Award_Winning"
+  },
+  {
+    "index": 44,
+    "tag_id": 47,
+    "tag_name": "Gourmet"
+  },
+  {
+    "index": 45,
+    "tag_id": 48,
+    "tag_name": "Work_Life"
+  }
+]
