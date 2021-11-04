@@ -1,0 +1,86 @@
+.navbar{
+    display:grid;
+    grid-template-rows: auto;    
+    position: relative;
+    top: 0;
+    border-bottom: 4px solid rgb(228, 68, 143);
+    width: 100%;
+    background: #44477E;
+
+}
+
+.nav-items.collapse{
+    height: 70px;       
+    transition: all .5s ease ;
+}
+
+.navbar-header{
+    display: grid;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-template-columns: 100px auto 100px; 
+    
+}
+
+.nav-items{
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 0px;
+    background-color: rgb(73, 74, 156);
+    width: 100%;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    transition: .5s ease all
+}
+
+.nav-items > ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;   
+    padding: 0px;       
+    text-align: center;
+}
+
+.navbar-header .user-profile{
+    justify-self: center;
+    cursor: pointer;
+    height: max-content;
+    align-self: center;
+    text-align: center;
+}
+
+.navbar-header .user-profile img{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+} 
+
+.navbar-header .user-profile img:hover{
+    border: 3px solid rgb(228, 68, 143);
+} 
+
+.navbar-header .logo{
+    justify-self: center;
+    cursor: pointer;
+} 
+
+ul li{
+    padding: 8px 8px;
+    color: white; 
+    font-weight: 500;
+    border-right: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+ul li:last-child{
+    border-right: none;
+}
+
+.name-user{
+    margin: 0px;
+    color: white;
+}

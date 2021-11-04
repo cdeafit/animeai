@@ -1,0 +1,12 @@
+{
+    "Genero 1": [
+        {"anime": "Anime 1", "description": "Description 1"},
+        {"anime": "Anime 2", "description": "Description 2"},
+        {"anime": "Anime 3", "description": "Description 3"}
+    ],
+    "Genero 2": [
+        {"anime": "Anime 4", "description": "Description 4"},
+        {"anime": "Anime 5", "description": "Description 5"},
+        {"anime": "Anime 6", "description": "Description 6"}
+    ]
+ }

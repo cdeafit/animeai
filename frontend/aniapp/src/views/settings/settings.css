@@ -1,0 +1,87 @@
+.navbarSettings{
+    position: relative;
+}
+
+.mainSettings {
+    position: relative;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.titleChangeEmail{
+    width: max-content;
+    color: white;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.moverEmail{
+    margin-left: 20px;
+}
+
+.titleChangePassword{
+    width: max-content;
+    color: white;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.moverPassword{
+    margin-left: 20px;
+}
+
+.cambiarLogo{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+
+input[name="user-photo-selection"]{
+    display:none;
+}
+.user-photo{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+h1{
+    color: white;
+}
+
+.colorCuadroPerfil{
+    background-color: purple;
+}
+
+.NewUsername{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.user-photo{
+    width: 100px; 
+    height: 100px;
+}
+
+
+.cambiarLogo label > img{
+    filter: grayscale(100%);
+}
+.cambiarLogo label > img:hover{
+    filter: grayscale(0%);
+    transition: .1s ease all;
+}
+
+.cambiarLogo label > img.selected{
+    filter: grayscale(0%)!important;
+} 
+.modal-title{
+    font-size: 24px;
+    margin: 0px;
+    color:white;
+}
+
+input{
+    display: block; 
+}
