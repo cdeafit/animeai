@@ -30,7 +30,6 @@ function Home() {
 }
 
 function Logged({currentUser}){
-
   return(
     <>
       <Navbar />

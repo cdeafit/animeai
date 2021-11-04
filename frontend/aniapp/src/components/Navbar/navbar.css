@@ -55,6 +55,10 @@
     height: 64px;
 } 
 
+.navbar-header .user-profile img:hover{
+    border: 3px solid rgb(228, 68, 143);
+} 
+
 .navbar-header .logo{
     justify-self: center;
     cursor: pointer;
