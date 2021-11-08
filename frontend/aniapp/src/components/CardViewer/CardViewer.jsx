@@ -25,7 +25,7 @@ export default function CardViewer(props) {
 
     useEffect(
         () => {
-            if( selected.length == recommendations.length) handleFinished(selected)
+            if( selected.length === recommendations.length) handleFinished(selected)
         }
     );
 

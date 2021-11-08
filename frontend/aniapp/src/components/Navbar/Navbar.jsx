@@ -1,12 +1,11 @@
 import React from 'react';
 import { useState} from 'react';
 import './navbar.css';
-import {Router, Route} from 'react-router';  
-import {Link} from 'react'; 
+//import {Router, Route} from 'react-router';  
+//import {Link} from 'react'; 
 import { useAuth } from '../../context/AuthContext'
 import { useHistory } from 'react-router-dom'
 import logo from "../../img/logo.png";
-import user from "../../img/g4.jpg";
 
 const Navbar = (props) => { 
     const [error, setError] = useState("")
