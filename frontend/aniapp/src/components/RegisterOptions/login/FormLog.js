@@ -1,7 +1,7 @@
 import React, {Fragment, useState} from 'react';
 import './FormLog.css';
 
-import { useAuth } from "../../../context/AuthContext";
+import { useAuth } from "../../../context/Context";
 import { Alert, AlertTitle } from '@material-ui/lab';
 import { useHistory } from "react-router-dom"
 

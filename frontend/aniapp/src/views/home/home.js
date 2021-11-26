@@ -17,7 +17,7 @@ import RegisterOptions from '../../components/RegisterOptions/RegisterOptions.js
 import ImageSlider from '../../components/ImageSlider/ImageSlider.js';
 import Navbar from '../../components/Navbar/Navbar';
 import { SliderData } from '../../components/ImageSlider/SliderData.js';
-import { useAuth } from '../../context/AuthContext'
+import { useAuth } from '../../context/Context'
 
 function Home() {
   const {currentUser} = useAuth()

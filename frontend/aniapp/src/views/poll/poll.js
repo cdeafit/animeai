@@ -26,6 +26,7 @@ function Poll({ threshold = 3 }) {
         e.target.classList.remove('selected')
         const updatedData = options.filter( anime => anime !== e.target.value)
         setOptions(updatedData)
+        console.log(options)
       }
       else if(options.length < threshold){
         e.target.classList.add('selected')

@@ -8,17 +8,31 @@ import recommended from './recommended.json';
 import "./card-viewer.css";
 import imagenDePrueba from "../../img/g1.jpg";
 
+import animedb from "../../data/animedb.json"
+
 
 export default function CardViewer(props) {
     const { recommendations, handleFinished } = props;
-    const [selected, setSelected] = useState([]);
-    const [genre, setGenre] = useState("Genero 1");
+    const [ selected, setSelected] = useState([]);
+    const [ genre, setGenre ] = useState(recommendations[0]);
+    const [ listID, setListID ] = useState([]);
+
+    /*const getIDs = () => {
+        
+    }
+
+    const searchByGenre = () => {
+        for(var i = 0; i<10000; i++)
+        if (animedb['animes'][i][''] === ){
+
+        }
+    }*/
     
     const handleSelection = (anime) =>{
         return () => {
             if( selected.length <= recommendations.length){
                 setSelected([ anime , ...selected])
-                setGenre("Genero 2")
+                setGenre(recommendations[1])
             }
         }
     }

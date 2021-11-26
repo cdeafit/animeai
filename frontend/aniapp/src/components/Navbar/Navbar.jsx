@@ -3,7 +3,7 @@ import { useState} from 'react';
 import './navbar.css';
 //import {Router, Route} from 'react-router';  
 //import {Link} from 'react'; 
-import { useAuth } from '../../context/AuthContext'
+import { useAuth } from '../../context/Context'
 import { useHistory } from 'react-router-dom'
 import logo from "../../img/logo.png";
 
