@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useAuth } from '../../context/AuthContext'
+import { useAuth } from '../../context/Context'
 import { useHistory } from "react-router-dom"
 import { Alert } from '@material-ui/lab';
 import Navbar from '../../components/Navbar/Navbar';

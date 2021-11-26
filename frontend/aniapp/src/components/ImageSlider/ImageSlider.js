@@ -29,7 +29,7 @@ const ImageSlider = ({slides}) => {
         return(
           <div className={index === current ? 'slide active': 'slide'} key={index}>
             {index===current && (
-              <img src={slide.image} alt='travel image' className='image'/>
+              <img src={slide.image} alt='descripcion por defecto' className='image'/>
             )}            
           </div>    
         )

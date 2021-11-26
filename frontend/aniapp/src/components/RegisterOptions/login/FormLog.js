@@ -1,13 +1,13 @@
 import React, {Fragment, useState} from 'react';
 import './FormLog.css';
 
-import { useAuth } from "../../../context/AuthContext";
+import { useAuth } from "../../../context/Context";
 import { Alert, AlertTitle } from '@material-ui/lab';
 import { useHistory } from "react-router-dom"
 
 const FormLog = () => {
     const { login } = useAuth()
-    const [error, setError] = useState('')
+    const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory();
 
@@ -25,23 +25,22 @@ const FormLog = () => {
     }
 
     async function sendData(event) {
-        event.preventDefault();        
-
+        event.preventDefault(); 
         try {
             setError("")
             setLoading(true)
             await login(datos['email'], datos['password'])
             history.push("/")
         } catch {
-            setError('Failed to log in.')
+            setError("Failed to log in.")
         }
-
         setLoading(false)     
     }
 
     return(
         <Fragment>
             <h1 className="TituloLogIn">LOG IN</h1>
+            <div>{error}ni idea</div>
             <form className='FormLogIn' onSubmit={sendData}>
                 <div>
                     <input

@@ -1,7 +1,8 @@
 import logo from './img/logo.png';
 import './App.css';
 
-import { AuthProvider } from './context/AuthContext'
+import { ContextProvider } from './context/Context'
+
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import PrivateRoute from './components/PrivateRoute';
 
@@ -15,7 +16,7 @@ function App() {
   return (
     <>
     <Router>
-      <AuthProvider>
+      <ContextProvider>
         <Switch>
           <Route exact path="/poll" component={Poll} />
           <PrivateRoute path="/recommendations" component={RecommendView} />
@@ -23,7 +24,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <PrivateRoute exact path="/mylist" component={MyList}/>     
         </Switch>
-      </AuthProvider>
+      </ContextProvider>
     </Router>
     
     <div className="footer">      
